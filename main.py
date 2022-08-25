@@ -26,7 +26,7 @@ moves = ['F', 'T', 'L', 'R']
 
 @app.route("/", methods=['GET'])
 def index():
-    return "Let the battle begin!"
+    return "Let the battle begin! Trent"
 
 @app.route("/", methods=['POST'])
 def move():
