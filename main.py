@@ -39,6 +39,7 @@ def move():
         return moves[random.randrange(len(moves))]
     except:
         logging.error(request.json)
+        return 't'
 
 if __name__ == "__main__":
   app.run(debug=False,host='0.0.0.0',port=int(os.environ.get('PORT', 8080)))
