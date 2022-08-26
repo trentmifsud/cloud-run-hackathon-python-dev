@@ -33,9 +33,8 @@ def index():
 @app.route("/", methods=['POST'])
 def move():
     try:
-
         request.get_data()
-	json.loads(request.json)
+	    json.loads(request.json)
         logger.info(request.json)
         return moves[random.randrange(len(moves))]
     except:
